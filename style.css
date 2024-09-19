@@ -1,51 +1,45 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #8052ec, #d161ff);
 }
 
 #container {
+    width: 31.25em;
+    height: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#container div {
     position: relative;
-    width: 60vw;
-    height: 20vw;
-    background-image: url(./clock.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: auto;
-    border: 2px solid black;
-    box-shadow: 5px 10px 20px black;
-    border-radius: 6vw;
-    margin-top: 10%;
-
+    background-color: #ffffff;
+    height: 100%;
+    width: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #150c41;
+    border-radius: 0.4em;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.05em;
 }
 
-#hour,
-#minute,
-#second {
-    margin-top: 2%;
-    float: left;
-    width: 28.8880%;
-    height: 100%;
-    background-image: radial-gradient(circle at center, rgb(242, 92, 92) 0% 10%, salmon, yellow, transparent);
-    -webkit-background-clip: text;
-    color: transparent;
-    /* border-right: 2px solid black; */
-    font-size: 15vw;
-    text-align: center;
-    transition: all 0.5s;
-    display: grid;
-
-}
-
-.colen {
-    /* border: 2px solid black; */
-    background-image: radial-gradient(rgb(172, 61, 172), wheat);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 15vw;
-    width: 5%;
-    height: 100%;
-    float: left;
-    text-align: center;
-    transition: all 0.5s;
-
+#container span {
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #ffffff;
 }
